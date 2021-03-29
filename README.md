@@ -1,13 +1,13 @@
 Oblig X
 =======
-OsloMet brukernavn:
+OsloMet brukernavn:s354594
 
-GitHub brukernavn:
+GitHub brukernavn:Meron07       
 
-GitHub repo URL:
+GitHub repo URL: 
 
 URL til Heroku app:
 
-Fullt navn:
+Fullt navn:Meron Berhe Kidane
 
 Kort beskrivelse av applikasjon (5–10 setninger):
