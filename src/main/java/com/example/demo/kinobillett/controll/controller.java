@@ -5,7 +5,8 @@ import com.example.demo.kinobillett.repository.AppRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.ArrayList;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/kinobillett")
@@ -14,16 +15,17 @@ import java.util.ArrayList;
         AppRepo repo;
 
         @PostMapping("/lagre")
-        public void lagre(Billett billett) {
-            repo.leggInn(billett);
+        public void lagreBillett(Billett innBillett){
+            repo.lagreBillett(innBillett);
         }
 
         @GetMapping("/hent")
-        public ArrayList<Billett> hent() {
+        public List<Billett> hent(){
             return repo.hentAlle();
         }
 
         @DeleteMapping("/slett")
         public void slett() {
-            repo.slettAlle(); }
+            repo.slettAlle();
+        }
     }
